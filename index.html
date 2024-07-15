@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Landing Page   </title>
+            <link rel="stylesheet" type="text/css" href="style.css">
+            <link rel="stylesheet" type="text/css" href="/moon/moon.css">
+            <script src="script.js" defer></script>
+          </head>
+      
+      
+      
+    <body>
+        <section class="section1"> 
+            <img src="bg.jpg" id="bg">
+            <img src="moon.png" id="moon">
+            <img src="road.png" alt="road">
+            <img src="mountain.png" id="mountain">
+            <!-- <img src="saturn.png" id="saturn" style=position:relative; top: 50px;> -->
+            <h2 id="text"> Welcome </h2>
+        </section>
+        <script type="text/javascript">
+            let bg= document.getElementById("bg");
+            let mercury= document.getElementById("moon");
+            let road= document.getElementById("road");
+            let mountain= document.getElementById("mountain");
+            let text= document.getElementById("text");
+            let saturn=document.getElementById("saturn")
+
+            window.addEventListener('scroll', function(){
+                var value = window.scrollY;
+                bg.style.top = value * 0.5 + 'px';
+                mountain.style.left = value * 0.3 + 'px';
+                moon.style.left = -value * 0.3 + 'px';
+                // road.style.top = -value * 0.15+ 'px';
+                // saturn.style.left= value*0.1+'px';
+                text.style.top = -value * 0.15+ 'px';
+
+            })
+        
+        </script>
+    
+    
+
+    
+            <div class="intro">
+                <h1 class="hello"> Hello! My name is Victoria Lee. <br> Welcome to my website. </h1>
+                
+             
+                <body>
+                    
+                    <a href="about.html" class="ripple-button">About Me
+                    <span style ="left: 79px; top: 40px;"></span>
+                    <span style ="left: 128px; top: 37px"></span>
+                    <span style ="left: 122px; top: 36px;" ></span> 
+
+                    </a>
+
+           
+                <script type ="text/javascript" >
+
+
+                document.addEventListener('DOMContentLoaded', () => {
+    const buttons = document.querySelectorAll('.ripple-button');
+
+    buttons.forEach(button => {
+        button.addEventListener('click', function (e) {
+            // Remove existing ripples to prevent multiple from stacking
+            e.preventDefault();
+            const existingRipples = this.querySelectorAll('span');
+            existingRipples.forEach(ripple => ripple.remove());
+
+            const rect = this.getBoundingClientRect();
+            const x = e.clientX - rect.left;
+            const y = e.clientY - rect.top;
+
+            const ripple = document.createElement('span');
+            ripple.style.left = `${x}px`;
+            ripple.style.top = `${y}px`;
+            this.appendChild(ripple);
+
+            ripple.addEventListener('animationend', () => {
+                ripple.remove();
+                window.location.href = this.href;
+            });
+        });
+    });
+});
+
+             </script>
+            </div>
+           </body>
+         
+    
+            <div class="heading">
+                
+                 <h2 > My Projects </h2>
+                  <div class="paragraph">
+                    <p> Check out some of my work below </p>
+                </div>
+            </div>
+       </section>
+
+    
+        <div class="cards">
+        <div class="card">
+            <img src="cover1.png" alt="project 1 image" >
+                <div class="content">
+                    <h3>Project 1</h3>
+                    <p>College Safety App</p>
+                  
+                
+                    <div> <a href="Project-1.html" class="learn-more"> Learn More</a>
+                    </div>
+                
+            </div>
+        </div> 
+        <div class="card">
+            <img src="cover2.png" alt="project 2 image" >
+    
+                <div class="content">
+                    <h3>Project 2</h3>
+                    <p>Prudential Website Redesign </p>
+                  
+                
+                    <div> <a href="Project-2.html" class="learn-more"> Learn 
+       More</a>
+                    </div>
+                
+            </div>
+        </div> 
+        <div class="card">
+            <img src="cover3.png" alt="project 1 image" >
+                <div class="content">
+                    <h3>Project 3</h3>
+                    <p>Health Tracker App</p>
+                  
+                
+                    <div> <a href="Project-3.html" class="learn-more"> Learn 
+       More</a>
+                    </div>
+                
+            </div>
+        </div> 
+          </div>
+
+        
+       
+              <div class="cute-container">
+                  <div class = "cute-moon">
+          
+                      <div class="crater crater-1"> </div>
+                      <div class="crater crater-2"> </div>
+                      <div class="crater crater-3"> </div>
+                      <div class="crater crater-4"> </div>
+                      <div class="crater crater-5"> </div>
+                      <div class="shadow"> </div>
+                      <div class= "eye eye-1"></div>
+                      <div class="eye eye-r"></div>
+                      <div class="moon-mouth"></div>
+                      <div class="blush blush-1"></div>
+                      <div class="blush blush-2"></div>
+                  </div>
+             
+              <div class="orbit">
+                  <div class="rocket">  
+                      <div class="window"></div>
+                  </div>
+              </div>
+          </div>
+         
+        
+
+
+          <footer>
+            <div class="footer-content">
+             <div class="social-icons">
+                 <a href=""><i class="fa-brands fa-facebook"> </i></a>
+                 <a href=""><i class="fa-brands fa-instagram"> </i></a>
+                 <a href=""><i class="fa-brands fa-twitter"> </i></a>
+                 <a href=""><i class="fa-brands fa-google-plus"> </i></a>
+                 <a href=""><i class="fa-brands fa-youtube"> </i></a>
+            </div>
+            <div class="footer-navigation">
+           <ul>
+             <li><a href="index.html">Home</a></li>
+             <li><a href="about.html">About</a></li>
+             <li><a href="contact.html">Contact</a></li>
+             <li><a href="Project-1.html">Projects</a></li>
+            </ul>
+             </div>
+           <div class="footer-bottom">
+            copyright &copy; 2024; Designed by <span class="designer" > Vix</span> 
+           </div>
+        </div>
+        </footer>
+    
+   
+        
+    </body>
+
+
+</html>
