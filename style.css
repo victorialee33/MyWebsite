@@ -839,13 +839,13 @@ footer{
     border-radius: 50%;
 }
 
-.eye-1{
-    bottom: 18px;
+.eye-left{
+    bottom: 255px;
     left: 59px;
 
 }
 
-.eye-r{
+.eye-right{
     bottom: 267px;
     left: 101px;
 
