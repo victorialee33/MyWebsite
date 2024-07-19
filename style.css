@@ -152,6 +152,15 @@ a span{
     width: 100%;
 }
 
+.fun, .fun-button{
+    width: fit-content;
+    margin: auto;
+
+}
+
+
+
+/* ABOUT  */
 .about-container {
     display: flex;
     flex-direction: column;
@@ -175,8 +184,6 @@ a span{
     max-height: 300px;
 
 }
-
-
 
 
 .cards{
@@ -608,6 +615,8 @@ h2{
 
 }
 
+/* FOOTER */
+
 
 footer{
     margin-top: 200px;
@@ -629,6 +638,8 @@ footer{
 .social-icons{
     display: flex;
     justify-content: center;
+    
+    
 }
 
 .social-icons a{
@@ -637,13 +648,10 @@ footer{
     border-radius: 50%;
     width: 20px; /* Adjust the width and height as needed */
     height: 20px;
-    background-color: #111; 
-
 }
 
 .social-icons a i{
     font-size: 1.5em;
-    opacity: 0.9;
     color: white; 
 
 }
@@ -956,3 +964,324 @@ footer{
 } 
 
 
+.astro-container{
+    position:absolute;
+    height: 31.25em;
+    width: 31.25em;
+    background-color: rgba(255, 255, 255, 0.05);
+    transform:translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    border-radius: 50%;
+    margin: auto;
+    margin-top: 150px;
+}
+
+.center{
+    transform: translateX(-50%);
+    left: 50%;
+}
+
+.planet{
+    height: 12.5em;
+    width: 12.5em;
+    background-color: #f5d201;
+    border-radius: 50%;
+    position:absolute;
+    top: 2.81em;
+    left: 13.75em;
+}
+
+.planet:before{
+    position: absolute;
+    content:"";
+    background-color: #fcec8e;
+    height: 1.25em;
+    width: 6.87em;
+    border-radius: 0.62em;
+    top: 3em;
+    left: 4.25em;
+    box-shadow: 1.42em 3.65em 0 -0.25em #fcec8e, -1.25em 4.75em 0 0.12em #fcec8e;
+}
+
+.planet:after{
+    position: absolute;
+    content: "";
+    background-color: #edb514;
+    height: 0.75em;
+    width: 2.5em;
+    border-radius: 0.46em;
+    top: 1.87em;
+    left: 3em;
+    box-shadow: -1.25em 3.75em 0 0.37em #edb514, 4.06em 8.43em 0 0.12em #edb514;
+}
+
+.astro-shadow{
+    position: absolute;
+    background-color: transparent;
+    box-shadow: 0.93em, 0.93em, rgba(134, 123, 5, 0.3);
+    height: 12.5em;
+    width: 12.5em;
+    border-radius: 50%;
+    bottom: 0.93em;
+    right: 0.93em;
+
+}
+
+.astro{
+    position: absolute;
+    height: 17.5em;
+    width: 15.62em;
+    top: 7.5em;
+    left: -6.25em;
+    transform: rotate(-30deg);
+    animation: float 5s infinite;
+}
+
+@keyframes float{
+    50%{
+        transform: rotate(-30deg) translateY(1.87em);
+    }
+}
+
+.suit{
+    position: absolute;
+    background-color: #e2e9f4;
+    height: 6.25em;
+    width: 6.25em;
+    border-radius: 10%;
+    top: 5.5em;
+}
+
+.helmet{
+    background-color: #e2e9f4;
+    height: 5.81em;
+    width: 6.25em;
+    position: absolute;
+    top: -5.43em;
+    border-radius: 45%;
+}
+
+.helmet:before{
+    position: absolute;
+    content:"";
+    background-color: #64c1f7;
+    height: 3.75em;
+    width: 5em;
+    border-radius: 60% 60% 40% 40%;
+    left: 0.62em;
+    top: 0.43em;
+}
+.helmet:after{
+    content:"";
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.3);
+    height: 0.93em;
+    width: 0.93em;
+    border-radius: 50%;
+    left: 1.25em;
+    top: 1.56em;
+}
+
+.tank{
+    position:absolute;
+    background-color: #aec2d2;
+    height: 7.5em;
+    width: 7.5em;
+    top: 5em;;
+    border-radius: 0.62em;
+}
+
+.buttons{
+    background-color: #bdd3f3;
+    width:3.43em;
+    height: 1.87em;
+    border-radius: 0.5em;
+    position: absolute;
+    top: 1.56em;
+}
+
+.buttons:after{
+    position:absolute;
+    content: "";
+    height: 0.75em;
+    width: 0.75em;
+    background-color: #1683ed;
+    border-radius: 50%;
+    top: 0.62em;
+    left: 0.25em;
+    box-shadow: 1.12em 0 #fbd31f, 2.25em 0 #e62c1b;
+
+}
+
+.buttons:before{
+    position: absolute;
+    content: "";
+    height: 1.25em;
+    width: 1.25em;
+    border-radius: 50%;
+    background-color: #aec3d2;
+    top: 2.5em;
+    left: 1.12em;
+
+}
+
+.astro-hand-l, .astro-hand-r{
+    position: absolute;
+    height: 1.62em;
+    width: 4.68em;
+    background-color: #e2e9f4;
+    border-radius: 2.5em;
+    top: -0.62em;
+}
+
+.astro-hand-l{
+    transform: rotate(20deg);
+    left: -3.12em;
+}
+
+.astro-hand-r{
+    transform: rotate(-20deg);
+    right: -3.12em;
+}
+
+.astro-hand-l:before, .astro-hand-r:before{
+    position: absolute;
+    content: "";
+    height: 1.62em;
+    width: 4.81em;
+    background-color: #e2e9f4;
+    border-radius: 1.62em;
+    bottom: 1.62em;
+}
+
+.astro-hand-r:before{
+    left: 1.87em;
+    transform: rotate(90deg);
+}
+
+.astro-hand-l:before{
+    right: 1.87em;
+    transform: rotate(-90deg);
+
+}
+
+.astro-hand-l:after, .astro-hand-r:after{
+    position:absolute;
+    content: "";
+    background-color: #e62c1b;
+    height: 0.34em;
+    width: 1.75em;
+    border-radius: 0.81em;
+    top: -1.56em;
+}
+
+.astro-hand-l:after{
+    left: -0.43em;
+}
+
+.astro-hand-r:after{
+    right: -0.43em;
+}
+
+.astro-leg-l, .astro-leg-r{
+    height: 6.25em;
+    width: 2.5em;
+    background-color: #e2e9f4;
+    position: absolute;
+    top: 5em;
+}
+
+.astro-leg-l{
+    left: -0.75em;
+    transform: rotate(20deg);
+}
+
+.astro-leg-r{
+    right: -0.75em;
+    transform: rotate(-20deg);
+}
+
+.astro-leg-l:before, .astro-leg-r:before{
+    position: absolute;
+    content: "";
+    background-color: #fff;
+    width: 2.68em;
+    height: 2.18em;
+    border-radius: 50% 50% 0 0;
+    top: 4.06em;
+    left: -0.09em;
+
+}
+
+.astro-leg-l::after, .astro-leg-r:after{
+    position: absolute;
+    content: "";
+    background-color: #e62c1b;
+    width: 2.81em;
+    height: 0.31em;
+    border-radius: 1em;
+    bottom: -0.09em;
+    left: -0.15em;
+}
+
+.pipe{
+    position: absolute;
+    background-color: transparent;
+    height: 2.5em;
+    width: 6.25em;
+    border: 0.62em solid #3cb9f0;
+    border-top:none;
+    border-radius: 0 0 3.75em 1.87em;
+    left: 2.81em;
+    top: 4.5em;
+}
+
+.pipe:before{
+    position:absolute;
+    content:"";
+    background-color: transparent;
+    height: 2.5em;
+    width: 2.81em;
+    border: 0.62em solid #3cb9f0;
+    border-left: none;
+    border-bottom: none;
+    top: -3.11em;
+    left: 3.42em;
+    border-radius: 0 2.5em 0 0;
+}
+
+.astro-stars{
+    width: 0.31em;
+    height: 0.31em;
+    border-radius: 50%;
+    box-shadow:
+    25em 20em #fff, 
+     /* middle right star */
+    8.2em 6em #fff, 
+    /* top left star */
+    6em 25em #fff,
+    /* bottom left star  */
+    25em 26em #fff, 
+    /* also bottom right star */
+    3em 16em #fff;
+    /* middle left star */
+    animation:twinkle 2s infinite;
+}
+
+@keyframes twinkle{
+    50%{
+        opacity:0.1;
+    }
+}
+
+@media screen and (min-width: 700px){
+    .astro-container{
+        font-size: 20px;
+
+    }
+}
+
+.fun-title{
+    margin-left: 200px;
+}

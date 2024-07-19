@@ -3,7 +3,8 @@
     <head>
         <title> Landing Page   </title>
             <link rel="stylesheet" type="text/css" href="style.css">
-            <link rel="stylesheet" type="text/css" href="/moon/moon.css">
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+            <!-- <link rel="stylesheet" type="text/css" href="/moon/moon.css"> -->
             <script src="script.js" defer></script>
           </head>
       
@@ -13,26 +14,27 @@
         <section class="section1"> 
             <img src="bg.jpg" id="bg">
             <img src="moon.png" id="moon">
-            <img src="road.png" alt="road">
+            <img src="astronaut.png" alt="road">
             <img src="mountain.png" id="mountain">
-            <!-- <img src="saturn.png" id="saturn" style=position:relative; top: 50px;> -->
+            <img src="saturn.png" id="saturn">
             <h2 id="text"> Welcome </h2>
         </section>
         <script type="text/javascript">
             let bg= document.getElementById("bg");
             let mercury= document.getElementById("moon");
-            let road= document.getElementById("road");
+            let saturn= document.getElementById("saturn")
+            let road= document.getElementById("astronaut");
             let mountain= document.getElementById("mountain");
             let text= document.getElementById("text");
-            let saturn=document.getElementById("saturn")
+           
 
             window.addEventListener('scroll', function(){
                 var value = window.scrollY;
                 bg.style.top = value * 0.5 + 'px';
                 mountain.style.left = value * 0.3 + 'px';
+                saturn.style.left= value * 0.4 + 'px';
                 moon.style.left = -value * 0.3 + 'px';
-                // road.style.top = -value * 0.15+ 'px';
-                // saturn.style.left= value*0.1+'px';
+                astronaut.style.top = -value * 0.3+ 'px';
                 text.style.top = -value * 0.15+ 'px';
 
             })
@@ -43,7 +45,7 @@
 
     
             <div class="intro">
-                <h1 class="hello"> Hello! My name is Victoria Lee. <br> Welcome to my website. </h1>
+                <h1 class="hello"> Hello! My name is Victoria. <br> Welcome to my website, designed and coded by yours truly. </h1>
                 
              
                 <body>
@@ -93,9 +95,9 @@
     
             <div class="heading">
                 
-                 <h2 > My Projects </h2>
+                 <h2 > My Projects: </h2>
                   <div class="paragraph">
-                    <p> Check out some of my work below </p>
+                    <p> Check out some of my work below! </p>
                 </div>
             </div>
        </section>
@@ -168,6 +170,14 @@
               </div>
           </div>
          
+        <div class="fun">
+          <h2>Or, see what I do for fun!</h2>
+        
+        </div>
+        
+        <div class="fun-button">
+        <a href="fun.html"> More </a>
+        </div>
         
 
 
