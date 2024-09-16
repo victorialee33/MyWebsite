@@ -1293,3 +1293,11 @@ footer{
     transform: translate(-50px, 600px);
    
 }
+
+
+.proj2{
+    padding-left: 150px;
+    padding-right: 150px;
+    color: white;
+    line-height: 2em;
+}
