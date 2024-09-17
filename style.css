@@ -596,14 +596,13 @@ h2{
 }
 
 
-
 .participants{
     position: relative;
     margin: auto; 
-    transform: scale(0.4) !important;
-    margin-top: -250px;
-    margin-bottom: -300px; 
-    padding: 10px;
+    transform: scale(0.7) !important;
+    margin-top: 0;
+    margin-bottom: auto; 
+   
 }
 
 .competition{
