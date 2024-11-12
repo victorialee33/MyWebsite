@@ -245,8 +245,6 @@ body{
 
 }
 
-
-
 .about{
     
     position: relative;
@@ -271,8 +269,6 @@ body{
      top: 50%;
      left: 50%;
      position: relative;
-   
-   
    
 }
 
@@ -600,8 +596,6 @@ h2{
     position: relative;
     margin: auto; 
     transform: scale(0.7) !important;
-    margin-top: 0;
-    margin-bottom: auto; 
    
 }
 
@@ -1299,4 +1293,9 @@ footer{
     padding-right: 150px;
     color: white;
     line-height: 2em;
+}
+
+.redesign{
+    position: relative;
+    margin: auto; 
 }
