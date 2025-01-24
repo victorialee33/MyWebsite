@@ -87,7 +87,6 @@ section img{
     position: relative;
     width: 50%;
     margin:auto;
-    padding-top: 400px;
     text-align:  center;
     color: white;
    
@@ -106,9 +105,13 @@ a{
     letter-spacing: 1px;
     border-radius: 40px;
     overflow: hidden;
+  
+
+
+}
+
+a:not(.back-arrow, .next-arrow){
     background: linear-gradient(90deg, #011355, #019bb2);
-
-
 }
 
 a span{
@@ -520,7 +523,7 @@ a span{
 header{
     padding-left: 150px;
     padding-right: 150px;
-    padding-top: 100px;
+    padding-top: 00px;
     color: white;
     line-height: auto;
     object-fit: cover;
@@ -534,8 +537,6 @@ h1{
     color: #a8d0ff;
 }
 
-
-
 .proj1{
     padding-left: 150px;
     padding-right: 150px;
@@ -545,7 +546,7 @@ h1{
 }
 
 h2{
-    padding-top: 100px;
+    padding-top: 80px;
     padding-bottom: 50px;
     color: #a8d0ff;
     
@@ -595,7 +596,7 @@ h2{
 .participants{
     position: relative;
     margin: auto; 
-    transform: scale(0.7) !important;
+    transform: scale(0.5) !important;
    
 }
 
@@ -689,6 +690,7 @@ footer{
     /* margin-top: -100px; */
     margin-bottom: 100px;
     z-index: 100;
+
 }
 .back-arrow{
     position: absolute;
@@ -744,12 +746,11 @@ footer{
 .cute-container{
     height: 370px;
     width: 370px;
-    position: absolute;
+    position: relative;
     margin: auto;
     left: 0;
     right:0;
-    top: 1150px;
-    bottom: 0;
+    top: 00px;
 }
 
 .cute-moon{
@@ -907,6 +908,9 @@ footer{
         transform: rotate(360deg);
     }
 }
+
+
+/*-ROCKET MAN*/
 
 .rocket{
     background-color: #fafcf7;
